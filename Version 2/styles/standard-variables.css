@@ -1,0 +1,78 @@
+:root {
+    /* background and highlight colors */
+    --main-card-color: #FFFFFF;
+    --main-background-color: white; /*#F6F7F9;*/
+    
+    /*--light-blue-highlight-color: #A9F1FF;*/
+    --dark-blue-highlight-color: #2e50b8 /*#145387*/;
+    --blue-highlight-color: #20b9df /*#41ABD8*/;
+    --purple-highlight-color: #732eb8 /*#641487*/;
+    /*--dark-blue-green-highlight-color: #2FB0BF;
+    --light-blue-green-highlight-color: #27DBE8;*/
+    --light-green-highlight-color: #95b82e /*#b3d856*/;
+    
+    --page-highlight-color: black; /* is over ridden on each page depending on their highlight color, this is just the default fall back */
+    
+    --light-gray-color: #7F8082;
+    --slightly-light-gray-color:#BFBFC0;
+    --very-light-gray-color: #f9fafb /*#F6F7F9*/;
+    --dark-gray-color: #4e5053;
+    
+    /* assign highlight colors to each group of pages and their children pages */
+    --home-highlight-color: var(--blue-highlight-color);
+    --home-second-highlight-color: var(--dark-blue-highlight-color);
+    
+    --story-highlight-color: var(--dark-blue-highlight-color);
+    --story-second-highlight-color: var(--blue-highlight-color);
+    
+    --projects-highlight-color: var(--purple-highlight-color);
+    --projects-second-highlight-color: var(--blue-highlight-color);
+    
+    --interests-highlight-color: var(--light-green-highlight-color);
+    --interests-second-highlight-color: var(--blue-highlight-color);
+    
+    
+    /* text colors */
+    --main-title-text-color: #FFFFFF;
+    
+    /* text families */
+    --main-font-family: 'Montserrat', sans-serif;
+    --title-font-family: 'Montserrat', sans-serif;
+    
+    /* text sizes */
+    --title-font-size: 6rem;
+    --extra-large-font-size:3rem;
+    --large-font-size: 2rem;
+    --medium-font-size: 1.5rem;
+    --small-font-size: 1.225rem;
+    --tiny-font-size: 1rem;
+    
+    /* line height */
+    --small-line-height: 2;
+    --medium-line-height: 2.5;
+    
+    /* dimensions */
+    --card-margin: 2.5vw; /* default bottom margin spacing for content cards, full span cards, and content cards with images*/
+    --landscape-border-radius: 1.5vw; /* default border radius for elements when screen is landscape (desktop) */
+    --portrait-border-radius: 2.5vh; /* default border radius for elements when screen is portrait (phone) */
+    
+    /* hover formatting */
+    --highlight-brightness: 110%; /* the default percentage of brightness to be applied as a filter to an element on hover */
+}
+
+/*
+* RESPONSIVE MEDIA QUERY
+*/
+@media screen and (max-width: 1000px) { /* Phones */
+    :root {
+        /* text sizes */
+        --title-font-size: 4rem;
+        --large-font-size: 1.3rem;
+        --medium-font-size: 1.25rem;
+        --small-font-size: 1rem;
+        --tiny-font-size: 0.85rem;
+        
+        /* replace landscape mode card-margin with portrait mode dimensions */
+        --card-margin: 3.5vh;
+    }
+}
